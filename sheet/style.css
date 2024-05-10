@@ -1,0 +1,833 @@
+:root{
+    /*font fw */
+    --font-fw-semibold:  600;  
+    --font-fw-regular:  400 ;  
+    --font-fw-bold: 700;
+    --font-fw-light: 300
+
+
+
+
+    /* color */
+
+    --bg-color: #00000;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    /* color-scheme: dark; */
+    
+}
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+}
+
+
+.container{
+    /* border: 4px solid red; */
+    width: 1238px;
+    max-width: 90%;
+    margin: auto;
+    /* height: 900px; */
+}
+
+.top-nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    /* border: 3px solid red; */
+    /* background-color: orange; */
+    width: 150px;
+    aspect-ratio: 1;
+    background-image: url(../fevicon/logo.webp.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-nav{
+    display: flex;
+    gap: 3rem;
+}
+
+
+.nav-item{
+    list-style: none;
+}
+
+
+.link-nav{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.link-nav:hover{
+    color: #6F60FE;
+    transition: all 250ms;
+}
+
+
+
+/*section profile */
+
+.profile{
+    margin-top: 2rem;
+}
+
+.pro-heading{
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+
+.pro-sub-heading{
+    color: aliceblue;
+    font-size: 2.2rem;
+}
+
+.heading-highlight{
+    color: #6F60FE;
+}
+
+.pro-text{
+    color: aliceblue;
+    width: 80%;
+
+}
+
+.dn-cv{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.pro-btn{
+    /* width: 20%; */
+    border: 3px solid #6F60FE;
+    background-color: transparent;
+    color: aliceblue;
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.pro-btn:hover{
+    background-color: #6F60FE;
+    transition: all 250ms ease-in-out;
+}
+
+.profile-left{
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 0rem;
+}
+
+.btn-wrap{
+    display: flex;
+    gap: 1rem;
+}
+
+.box1{
+    width: 400px;
+    aspect-ratio: 1;
+   
+    background-color: orange;
+    border-radius: 50%;
+    background-image: url(../img/illustration_07-WEBP.webp);
+    background-position: center;
+    background-size: cover ;
+    border: 10px solid border-image linear-gradient(to left, red 80% , blue ) ;
+}
+
+.profile-wrap{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+
+.icon-behance{
+    width: 53px;
+    height: 53px;
+    border: 2px solid #6F60FE;
+    border-radius: 50%;
+    
+}
+
+.icon-behance:hover{
+    background-color: #6F60FE;
+    transition: all 250ms ease-in-out;
+}
+
+.icon-link-beh{
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+}
+
+.link-wrap{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    padding: 0rem 0rem;
+    /* border: 2px solid red; */
+    margin: 0;
+    width: 25%;
+}
+
+/*about */
+.about{
+    margin-top: 2.5rem
+}
+
+.about-heading{
+    color: aliceblue;
+    text-align: center;
+}
+
+.about-text{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.about-name{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.about-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0rem;
+}
+
+.box2{
+    width: 400px;
+    aspect-ratio: 1;
+   
+    background-color: orange;
+    border-radius: 50%;
+    background-image: url(../img/illustration_07.jpg);
+    background-position: center;
+    background-size: cover ;
+    border: 10px solid border-image linear-gradient(to left, red 80% , blue ) ;
+}
+.box3{
+    width: 400px;
+    aspect-ratio: 1;
+   
+    background-color: orange;
+    border-radius: 50%;
+    background-image: url(../img/pick-webp.webp);
+    background-position: center;
+    background-size: cover ;
+    border: 10px solid border-image linear-gradient(to left, red 80% , blue ) ;
+}
+
+.link-to-site{
+    text-decoration: none;
+    color: aliceblue;
+}
+.about-left{
+    /* border: 3px solid red; */
+}
+
+.about-right{
+    /* border: 4px solid blue; */
+    transform: translateX(-20%) translateY(15%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+}
+
+#about{
+    transition: transform 250ms ease-in;
+}
+
+
+/* my skill */
+
+.my-skill-heading{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.my-skill{
+    margin-top: 2.5rem;
+}
+
+.skill-wrap{
+    margin: 2rem auto;
+    /* background-color: orange; */
+    width: 70%;
+    /* height: 250px; */
+    gap: 1rem;
+    /* border: 2px solid black; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+    
+}
+.skill-icon{
+    width: 120px;
+    /* height: px; */
+}
+.skill-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.skill-text{
+    text-align: center;
+    color: aliceblue;
+}
+
+/* my extra skill */
+
+.extra-skill-heading{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* my-project-heading */
+
+.my-project-heading{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+
+}
+
+.mockup-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+/* .first-site{
+    width: 450px;
+    background-color: aliceblue;
+    height: 300px;
+    border-radius: 30px;
+
+} */
+.first-site1{
+    width: 450px;
+    background-color: aliceblue;
+    height: 300px;
+    border-radius: 30px;
+    background-image: url(../img/1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.first-site2{
+    width: 450px;
+    background-color: aliceblue;
+    height: 300px;
+    border-radius: 30px;
+    background-image: url(../img/2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.first-site3{
+    width: 450px;
+    background-color: aliceblue;
+    height: 300px;
+    border-radius: 30px;
+    background-image: url(../img/3.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.first-site4{
+    width: 450px;
+    background-color: aliceblue;
+    height: 300px;
+    border-radius: 30px;
+    background-image: url(../img/4.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.moukup-heading{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2rem;
+    /* border: 4px solid red; */
+    transform: translateX(-3%);
+}
+
+.mockup-heading-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17rem;
+    margin-top: 2.5rem;
+}
+
+.mockup-text{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+
+/* footer */
+
+
+.footer-heading{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.phone{
+    color: aliceblue;
+    
+}
+
+.ftr-btn{
+    border: 3px solid #6F60FE;
+    background-color: transparent;
+    color: aliceblue;
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 0.5rem;
+  
+}
+
+.ftr-btn:hover{
+    background-color: #6F60FE;
+}
+
+.ftr-btn-wrap{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-link-wrap{
+    transform: translateX(40%);
+    margin-bottom: 3rem;
+}
+
+
+@media (max-width:1200px) {
+    /* .container{
+        background-color: orange;
+    } */
+
+    .top-nav-wrap{
+        padding: 0rem 3rem;
+    }
+
+    
+
+
+
+
+
+}
+
+@media (max-width:992px) {
+    /* .container{
+        background-color: skyblue;
+    } */
+
+    .top-nav-wrap{
+        padding: 0rem 2.5rem;
+    }
+    
+    .about-text{
+        padding: 0rem 2.45rem;
+    }
+
+    .about-heading{
+        padding: 3rem;
+    }
+
+    .about-right{
+        margin-left: 5rem;
+       
+        width: 100%;
+       transform: translatex(-20%);
+    }
+
+    .about-left{
+        width: 70%;
+        padding: 0rem 3rem;
+    }
+
+    .skill-text{
+        padding: 1.5rem 2.5rem;
+    }
+
+    .my-skill-heading{
+        padding: 1.5rem 0rem;
+    }
+
+    .extra-skill-heading{
+        padding: 1.4rem 0rem;
+    }
+
+ .first-site1{
+    width: 400px;
+ }
+ .first-site2{
+    width: 400px;
+ }
+
+ .first-site3{
+    width: 400px;
+ }
+
+ .first-site4{
+    width: 400px;
+ }
+
+
+ .skill-icon{
+    width: 80px;
+ }
+
+ .box3{
+    width: 320px;
+ }
+
+ .about-wrap{
+    align-items: center;
+ }
+
+
+}
+@media (max-width:768px) {
+    /* .container{
+        background-color:  green;
+    } */
+
+
+    .main-nav{
+        display: none;
+    }
+
+    .logo{
+        margin: auto;
+    }
+
+
+
+    .profile-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+  .about-wrap{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .about-right{
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    margin: auto;
+    margin-top: 1.4rem;
+    transform: translateX(0%);
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .about-left{
+    margin: auto;
+    /* border: 2px solid red; */
+    padding: 1.4rem 3.5rem;
+    margin: 0;
+  }
+
+  .first-site1{
+    width: 300px;
+ }
+  .first-site2{
+    width: 300px;
+ }
+  .first-site3{
+    width: 300px;
+ }
+  .first-site4{
+    width: 300px;
+ }
+
+ .ftr-btn-wrap{
+    /* border: 3px solid red; */
+    width: 100%;
+    padding: 0.5rem 1rem;
+    
+    margin: auto;
+
+ }
+
+ .ftr-btn{
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+ }
+
+ .main-link-wrap{
+    margin: auto;
+ }
+
+ .skill-icon{
+    width: 80px;
+ }
+ 
+ 
+
+ #link-last{
+    /* border: 3px solid red; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 2.45rem;
+    margin-bottom: 2.45rem;
+    
+ }
+
+
+
+}
+
+@media (max-width:576px) {
+    /* .container{
+        background-color:  blueviolet;
+    } */
+
+
+    .pro-text{
+        /* border: 3px solid red; */
+        margin: auto;
+    }
+    .profile-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .box3{
+        width: 250px;
+        /* border: 3px solid red; */
+        margin-left: 3rem;
+    }
+
+    .profile-left{
+        
+        text-align: center;
+
+    }
+
+    .btn-wrap{
+        margin: auto;
+    }
+
+    .link-wrap{
+        /* border: 3px solid red; */
+        margin: auto;
+
+    }
+
+    .about-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-left{
+        /* border: 3px solid red; */
+        transform: translateX(-18%);
+    }
+
+    /* .about-right{
+        border: 3px solid red;
+    }
+
+    .about-name{
+        text-align: center;
+    } */
+
+    .first-site1{
+        width: 250px;
+        height: 250px;
+    }
+    .first-site2{
+        width: 250px;
+        height: 250px;
+    }
+    .first-site3{
+        width: 250px;
+        height: 250px;
+    }
+    .first-site4{
+        width: 250px;
+        height: 250px;
+    }
+
+    .mockup-text{
+        padding-bottom: 2rem;
+    }
+
+    .ftr-btn{
+        padding: 0.3rem 0.3rem;
+        font-size: 12px;
+     }
+
+     .main-link-wrap{
+        align-self: start;
+        transform: translatex(32%);
+     }
+
+     .mockup-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+     }
+
+
+
+
+
+}
+
+@media (max-width:375px){
+ 
+
+    .top-nav-wrap{
+        padding: 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav{
+        /* border: 3px solid red; */
+        /* padding: 0rem 3rem; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box1{
+        width: 200px;
+    }
+
+    .box3{
+        width: 200px;
+    }
+
+    .about-name{
+        font-size: 1rem;
+    }
+
+
+  .my-project-heading{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+    .mockup-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mockup-text{
+        padding: 1rem 1.25rem;
+    }
+
+    .ftr-btn{
+        padding: 0.1rem;
+        font-size: 14px;
+     }
+
+     .ftr-btn-wrap{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        gap: 1rem;
+     }
+
+     .main-link-wrap{
+        align-self: start;
+        transform: translatex(20%);
+     }
+
+     .box3{
+        margin-left: 0;
+     }
+     .btn-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
